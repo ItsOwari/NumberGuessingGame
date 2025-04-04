@@ -4,7 +4,7 @@ respostaFinal = int(random.randint(1, 100))
 
 def funcaoJogo(tentativas):
     for n in range(tentativas):
-        palpite = int((input("Insira seu palpite: ")))
+        palpite = int((input("\nInsira seu palpite: ")))
         if palpite == respostaFinal:
             return f"Parabéns, você adivinhou! A resposta era {respostaFinal}"
         elif palpite < respostaFinal:
