@@ -14,8 +14,10 @@ def funcaoJogo(tentativas):
     return f"Sinto muito, você perdeu. Seu número era {respostaFinal}..."
 
 
+print(f"Seja bem vindo(a) ao Acerte o Número™\nEu estou pensando em um número entre 1 e 100 e você deve adivinhá-lo\nPara começar, escolha sua dificuldade!")
+
 dificuldadeJogo = int(input(
-    f"Seja bem vindo(a) ao Acerte o Número™\nPrimeiramente, escolha sua dificuldade!\n1. Fácil, com 10 tentativas\n2. Médio, com 5 tentativas\n3. Difícil, com 3 tentativas\n"))
+    "\n1. Fácil, com 10 tentativas\n2. Médio, com 5 tentativas\n3. Difícil, com 3 tentativas\n"))
 
 tentativas = {1: 10, 2: 5, 3: 3}.get(dificuldadeJogo, 5)
 
